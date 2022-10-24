@@ -57,7 +57,13 @@
         var match = myregexp.exec(location.href);
         if (match != null) {
             let result = match[1];
-            let a = document.createElement('a');
+            
+            download(result);
+        } else {
+            result = "";
+        }
+    }
+let a = document.createElement('a');
             a.innerText = "下载所有";
             a.style.position = 'fixed';
             a.style.top = '2rem';
@@ -65,15 +71,7 @@
             a.style.zIndex = '2222222';
             document.body.appendChild(a);
             a.href = 'javascript:void(0)';
-            a.onclick = function(){
-                download(result);
-            };
-        } else {
-            result = "";
-        }
-    }
-    downloadAll();
-
+     a.onclick = downloadAll;
 
     // Your code here...
 })();
