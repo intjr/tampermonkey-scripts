@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://res.53zaixian.com/ebook/detail?id=*
+// @match        https://res.53zaixian.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=53zaixian.com
 // @grant        none
 // ==/UserScript==
